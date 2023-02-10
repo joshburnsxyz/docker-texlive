@@ -154,7 +154,4 @@ RUN echo "Clean up all temporary files." &&\
     (find /usr/share/ -type f -empty -delete || true) &&\
     (find /usr/share/ -type d -empty -delete || true) &&\
     mkdir -p /usr/share/texmf/source &&\
-    mkdir -p /usr/share/texlive/texmf-dist/source &&\
-
-# Add scripts to /bin/
-ADD scripts /bin/
+    mkdir -p /usr/share/texlive/texmf-dist/source
